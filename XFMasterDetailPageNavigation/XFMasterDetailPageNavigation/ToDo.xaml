@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CMenu.ToDoPage"
+             Title="ToDo">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblFirstName" Text="First Name:"/>
+            <Entry x:Name="txtFirstName"></Entry>
+            <Label x:Name="lblLastName" Text="Last Name:"/>
+            <Entry x:Name="txtLastName"></Entry>
+            <Label x:Name="lblCountry" Text="Country:"/>
+            <Picker x:Name="lstCountry">
+                <Picker.Items>
+                    <x:String>Canada</x:String>
+                    <x:String>USA</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button Clicked="OnClick" Text="Click Me" />
+            <Label x:Name="lblDisplay"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
